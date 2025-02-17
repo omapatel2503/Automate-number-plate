@@ -1,96 +1,124 @@
-Automation of Garbage Detection
-Images of Frontend
-Replace with images of frontend for the garbage detection system.
+# Automation of Number Plate Detection
 
-<img width="500" alt="Screenshot 2023-05-04 at 2 10 46 PM" src="https://user-images.githubusercontent.com/132324275/236158607-dfbe6d16-ecb2-46ba-83ee-a36da83e9b3e.png"> <img width="500" alt="Screenshot 2023-05-04 at 2 13 17 PM" src="https://user-images.githubusercontent.com/132324275/236158649-5da4c770-a59d-407a-8567-5b96798ba8f1.png"> <img width="500" alt="Screenshot 2023-05-04 at 2 13 27 PM" src="https://user-images.githubusercontent.com/132324275/236158642-16567aa5-bc9f-4a40-ba9c-8a6f911ee0b5.png"> <img width="500" alt="Screenshot 2023-05-04 at 2 14 06 PM" src="https://user-images.githubusercontent.com/132324275/236158985-efc749d4-2d27-4c42-9e86-3f233f4d9c40.png">
-Python Work
-This is a Python script that detects garbage in video frames and saves the corresponding images to a specified folder. Additionally, it sends the saved images to a server using HTTP requests.
+# Images of frontend
 
-Prerequisites
-This script requires the following Python libraries to be installed:
+<img width="500" alt="Screenshot 2023-05-04 at 2 10 46 PM" src="https://user-images.githubusercontent.com/132324275/236158607-dfbe6d16-ecb2-46ba-83ee-a36da83e9b3e.png">
 
-opencv
-numpy
-requests
-os
-sqlite3
-flask
-flask_cors
-pandas
-config
+<img width="500" alt="Screenshot 2023-05-04 at 2 14 06 PM" src="https://user-images.githubusercontent.com/132324275/236158985-efc749d4-2d27-4c42-9e86-3f233f4d9c40.png">
+
+
+# python work
+This is a Python script that detects Garbage in CCTV video and saves the corresponding images to a specified folder. Additionally, it sends the saved images to a server using HTTP requests.
+
+Prerequisites This script requires the following Python libraries to be installed:
+
+1. number.py OpenCV Numpy Requests os
+
+2. api.py sqlite3 flask config pandas
+
 Getting Started
+
 To get started, follow these steps:
 
-Clone the repository to your local machine.
+1. Clone the repository to your local machine.
 
-Create an additional folder inside the root folder named core, and then create a media folder inside it for storing the images.
+make extra folder in this file
 
-Install the required libraries using pip:
+1.core
+inside  make "media" folder in this file
+ 
 
-bash
-Copy
-Edit
-pip install opencv numpy requests sqlite3 flask flask_cors pandas config
-Save photos in the internal directory of your machine. Using Flask, store the images in an SQLite3 database table.
+2. Install the required libraries using pip: pip install all #import file
 
-Run the API and make the user in the API:
+        pip install opencv
+ 
+        pip install numpy
+ 
+        pip install Requests
+ 
+        pip instal sqlight3
+ 
+        pip install flask
+ 
+        pip install flask_cors
+ 
+        pip install pandas
+ 
+        pip install config
 
-Username: admin_user
-Email: admin@gmail.com
-Password: admin
-After starting the API, navigate to the following URL in your browser:
+3. save photo in Internal on machine and using flask frame work store photo in sqlite3 database table
 
-plaintext
-Copy
-Edit
-http://127.0.0.1:5000/admin/admin@gmail.com/admin
-Update the save_folder variable in the script to specify the folder where you want to save the detected garbage images.
+4. Run api then make user in api 
+        
+     user name = admin user
+    
+     email = admin@gmail.com 
+      
+     user passwors = admin
 
-Update the send_img function in the script to specify the URL of the server where you want to send the images.
+     Start API then write on your search engine this command
 
-Set your path to store the images in the core/media folder. The video file name is IMG_1891.mp4.
+         http://127.0.0.1:5000/admin/admin@gmail.com/admin
 
-Run the script using the following commands:
+5. Update the save_folder variable in the script to specify the folder where you want to save the detected number plate images.
 
-bash
-Copy
-Edit
-python api.py
-python garbage_detection.py
-License
-This script is distributed under the GNU General Public License.
+6. Update the send_img function in the script to specify the URL of the server where you want to send the images.
 
-Acknowledgements
-This project uses the pre-trained haarcascade_garbage.xml file from the OpenCV GitHub repository for detecting garbage in the video frames.
+7. set your path of where your program work store image in only core/media folder video file name is IMG_1891.mp4
 
-React JS Work
-This is a React JS program that demonstrates the use of various React components and libraries. The program displays a simple user interface that allows users to perform various actions, such as viewing detected garbage images, filtering results, and displaying statistics.
+8. Run the script using the commands:
 
-Requirements
-This app requires an internet connection for using React Bootstrap and some offline images.
+       python api.py
+ 
+       python number.py
 
-Installation of React JS:
-Create a web app using the terminal:
+License : 
+This script is distributed under the GNU General Public License
 
-bash
-Copy
-Edit
-npx create-react-app garbage-detection
-cd garbage-detection
-npm start
-Install necessary libraries:
+Acknowledgements: 
+This project uses the haarcascade_russian_plate_number.xml file from the OpenCV,GitHub repository.
 
-bash
-Copy
-Edit
-npm install axios react-toastify modal button react-router-dom
-Other dependencies required for your project can be installed as necessary.
+# React js Work 
 
-Features:
+This is a React JS program that demonstrates the use of various React components and libraries. The program displays a simple user interface that allows users to perform various actions, such as adding and deleting items from a list, filtering and searching items, and displaying charts.
+
+1. Requirements :
+        This app is run online react-bootstrapt so internet and some offline images 
+
+2. Installation of React js : 
+
+ 1. create wab app using Terminal :
+
+        1. npx create-react-app number
+
+        2. cd number
+
+        3. npm start
+
+ 2. Installation commands: 
+
+        npm axios
+  
+        npm Modal
+
+        npm Button 
+
+        npm react-toastify
+
+        npm menu
+ 
+ 3. And install other Requirements 
+
+
+3. Features : 
+
 This program demonstrates the following features of React JS:
 
-Components: The program is built using various React components, such as buttons, forms, and charts.
-State management: The program uses state to manage the data displayed on the user interface.
-Props: The program passes data between components using props.
-Hooks: The program uses various React hooks, such as useState and useEffect.
-React Router: The program uses React Router to handle navigation between different pages.
+1. Components: The program is built using various React components, such as buttons, forms, and charts.
+2. State management: The program uses state to manage the data displayed on the user interface.
+3. Props: The program passes data between components using props.
+4. Hooks: The program uses various React hooks, such as useState and useEffect.
+5. React Router: The program uses React Router to handle navigation between different pages.
+
+License: 
+This program is licensed under the MIT License. See the LICENSE file for more information.
