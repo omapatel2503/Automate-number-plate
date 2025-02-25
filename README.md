@@ -1,4 +1,4 @@
-# Automation of Garbage Detection
+# Automation of Number Plate Detection
 
 # Images of frontend
 
